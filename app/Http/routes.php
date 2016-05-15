@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('home.index');
 });
+
+Route::get('temp', function () {
+    return view('template.main');
+});
+
+Route::get('home',['uses' => 'PromotionNewsController@getList']);
+
+Route::get('profile', function () {
+    return view('template.profile-provier');
+});
