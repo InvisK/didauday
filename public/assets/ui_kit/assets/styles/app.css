@@ -181,7 +181,7 @@ sup {
 .btn.danger:hover,
 .btn.danger:focus {
   color: rgba(255, 255, 255, 0.87) !important;
-  background-color: #f44455; }
+  background-color: #E64A19; }
 
 .btn.b-dark:hover,
 .btn.b-dark:focus,
@@ -3038,11 +3038,11 @@ body {
 
 .danger {
   color: rgba(255, 255, 255, 0.87);
-  background-color: #f44455; }
+  background-color: #F4511E; }
   .danger .lt {
     background-color: #f55060; }
   .danger .dk {
-    background-color: #f3384a; }
+    background-color: #E64A19; }
   .danger .bg {
     background-color: #f44455; }
 
@@ -3935,10 +3935,10 @@ a.text-warning:hover {
   color: #f77a99 !important; }
 
 a.danger:hover {
-  background-color: #f3384a; }
+  background-color: #E64A19; }
 
 a.text-danger:hover {
-  color: #f3384a; }
+  color: #E64A19; }
 
 .text-danger,
 .text-danger-hover a:hover {
@@ -5296,7 +5296,7 @@ a.text-blue:hover {
   color: rgba(255, 255, 255, 0.87); }
 
 .deep-orange-900 {
-  background-color: #bf360c;
+  background-color: #E64A19;
   color: rgba(255, 255, 255, 0.87); }
 
 .deep-orange-A100 {
