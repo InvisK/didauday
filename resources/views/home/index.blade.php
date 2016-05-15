@@ -11,13 +11,13 @@
             <div class="carousel-inner " role="listbox">
                 <div class="carousel-item active ">
                     <div class="col-lg-4 nopadding">
-                        <img src="{{URL::asset('assets/app/images/banner1.jpg')}}" alt="First slide">
+                        <img src="{{URL::asset('public/assets/app/images/banner1.jpg')}}" alt="First slide">
                     </div>
                     <div class="col-lg-4 nopadding">
-                        <img src="{{URL::asset('assets/app/images/banner2.jpg')}}" alt="First slide">
+                        <img src="{{URL::asset('public/assets/app/images/banner2.jpg')}}" alt="First slide">
                     </div>
                     <div class="col-lg-4 nopadding">
-                        <img src="{{URL::asset('assets/app/images/banner3.jpg')}}" alt="First slide">
+                        <img src="{{URL::asset('public/assets/app/images/banner3.jpg')}}" alt="First slide">
                     </div>
 
                 </div>
@@ -153,7 +153,7 @@
                                         <a class="pull-right text-white _800">15%</a>
                                         <a href="" class="pull-left text-u-c label label-md danger">Food</a>
                                     </div>
-                                    <img src="{{URL::asset('assets/app/images/testimage.jpg')}}" class="w-full">
+                                    <img src="{{URL::asset('public/assets/app/images/testimage.jpg')}}" class="w-full">
                                 </div>
                                 <div class="p-a">
                                     <div class="text-muted m-b-xs">
@@ -163,13 +163,13 @@
                                     <div class="m-b h-2x"><a href="" class="_800">[Cửa Hàng] Bún cua hà nội</a></div>
                                     <div class="m-b h-3x">
                                         <div class="m-b-sm">Liked:</div>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a0.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a0.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a1.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a1.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a2.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a2.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a3.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a3.jpg')}}"
                                                         class="w-32 rounded"></a>
                                         <a class="btn btn-sm danger rounded"><i class="fa fa-plus"></i> 99</a>
                                     </div>
@@ -184,7 +184,7 @@
                                         <a class="pull-right text-white _800">15%</a>
                                         <a href="" class="pull-left text-u-c label label-md danger">Food</a>
                                     </div>
-                                    <img src="{{URL::asset('assets/app/images/testimage2.jpg')}}" class="w-full">
+                                    <img src="{{URL::asset('public/assets/app/images/testimage2.jpg')}}" class="w-full">
                                 </div>
                                 <div class="p-a">
                                     <div class="text-muted m-b-xs">
@@ -194,13 +194,13 @@
                                     <div class="m-b h-2x"><a href="" class="_800">[Cửa Hàng] Bún cua hà nội</a></div>
                                     <div class="m-b h-3x">
                                         <div class="m-b-sm">Liked:</div>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a0.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a0.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a1.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a1.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a2.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a2.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a3.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a3.jpg')}}"
                                                         class="w-32 rounded"></a>
                                         <a class="btn btn-sm danger rounded"><i class="fa fa-plus"></i> 99</a>
                                     </div>
@@ -215,7 +215,7 @@
                                         <a class="pull-right text-white _800">15%</a>
                                         <a href="" class="pull-left text-u-c label label-md danger">Food</a>
                                     </div>
-                                    <img src="{{URL::asset('assets/app/images/testimage3.jpg')}}" class="w-full">
+                                    <img src="{{URL::asset('public/assets/app/images/testimage3.jpg')}}" class="w-full">
                                 </div>
                                 <div class="p-a">
                                     <div class="text-muted m-b-xs">
@@ -225,13 +225,13 @@
                                     <div class="m-b h-2x"><a href="" class="_800">[Cửa Hàng] Bún cua hà nội</a></div>
                                     <div class="m-b h-3x">
                                         <div class="m-b-sm">Liked:</div>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a0.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a0.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a1.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a1.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a2.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a2.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a3.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a3.jpg')}}"
                                                         class="w-32 rounded"></a>
                                         <a class="btn btn-sm danger rounded"><i class="fa fa-plus"></i> 99</a>
                                     </div>
@@ -246,7 +246,7 @@
                                         <a class="pull-right text-white _800">15%</a>
                                         <a href="" class="pull-left text-u-c label label-md danger">Food</a>
                                     </div>
-                                    <img src="{{URL::asset('assets/app/images/testimage4.jpg')}}" class="w-full">
+                                    <img src="{{URL::asset('public/assets/app/images/testimage4.jpg')}}" class="w-full">
                                 </div>
                                 <div class="p-a">
                                     <div class="text-muted m-b-xs">
@@ -256,13 +256,13 @@
                                     <div class="m-b h-2x"><a href="" class="_800">[Cửa Hàng] Bún cua hà nội</a></div>
                                     <div class="m-b h-3x">
                                         <div class="m-b-sm">Liked:</div>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a0.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a0.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a1.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a1.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a2.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a2.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a3.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a3.jpg')}}"
                                                         class="w-32 rounded"></a>
                                         <a class="btn btn-sm danger rounded"><i class="fa fa-plus"></i> 99</a>
                                     </div>
@@ -277,7 +277,7 @@
                                         <a class="pull-right text-white _800">15%</a>
                                         <a href="" class="pull-left text-u-c label label-md danger">Food</a>
                                     </div>
-                                    <img src="{{URL::asset('assets/app/images/testimage2.jpg')}}" class="w-full">
+                                    <img src="{{URL::asset('public/assets/app/images/testimage2.jpg')}}" class="w-full">
                                 </div>
                                 <div class="p-a">
                                     <div class="text-muted m-b-xs">
@@ -287,13 +287,13 @@
                                     <div class="m-b h-2x"><a href="" class="_800">[Cửa Hàng] Bún cua hà nội</a></div>
                                     <div class="m-b h-3x">
                                         <div class="m-b-sm">Liked:</div>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a0.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a0.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a1.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a1.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a2.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a2.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a3.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a3.jpg')}}"
                                                         class="w-32 rounded"></a>
                                         <a class="btn btn-sm danger rounded"><i class="fa fa-plus"></i> 99</a>
                                     </div>
@@ -308,7 +308,7 @@
                                         <a class="pull-right text-white _800">15%</a>
                                         <a href="" class="pull-left text-u-c label label-md danger">Food</a>
                                     </div>
-                                    <img src="{{URL::asset('assets/app/images/testimage3.jpg')}}" class="w-full">
+                                    <img src="{{URL::asset('public/assets/app/images/testimage3.jpg')}}" class="w-full">
                                 </div>
                                 <div class="p-a">
                                     <div class="text-muted m-b-xs">
@@ -318,13 +318,13 @@
                                     <div class="m-b h-2x"><a href="" class="_800">[Cửa Hàng] Bún cua hà nội</a></div>
                                     <div class="m-b h-3x">
                                         <div class="m-b-sm">Liked:</div>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a0.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a0.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a1.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a1.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a2.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a2.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a3.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a3.jpg')}}"
                                                         class="w-32 rounded"></a>
                                         <a class="btn btn-sm danger rounded"><i class="fa fa-plus"></i> 99</a>
                                     </div>
@@ -339,7 +339,7 @@
                                         <a class="pull-right text-white _800">15%</a>
                                         <a href="" class="pull-left text-u-c label label-md danger">Food</a>
                                     </div>
-                                    <img src="{{URL::asset('assets/app/images/testimage4.jpg')}}" class="w-full">
+                                    <img src="{{URL::asset('public/assets/app/images/testimage4.jpg')}}" class="w-full">
                                 </div>
                                 <div class="p-a">
                                     <div class="text-muted m-b-xs">
@@ -349,13 +349,13 @@
                                     <div class="m-b h-2x"><a href="" class="_800">[Cửa Hàng] Bún cua hà nội</a></div>
                                     <div class="m-b h-3x">
                                         <div class="m-b-sm">Liked:</div>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a0.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a0.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a1.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a1.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a2.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a2.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a3.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a3.jpg')}}"
                                                         class="w-32 rounded"></a>
                                         <a class="btn btn-sm danger rounded"><i class="fa fa-plus"></i> 99</a>
                                     </div>
@@ -370,7 +370,7 @@
                                         <a class="pull-right text-white _800">15%</a>
                                         <a href="" class="pull-left text-u-c label label-md danger">Food</a>
                                     </div>
-                                    <img src="{{URL::asset('assets/app/images/testimage2.jpg')}}" class="w-full">
+                                    <img src="{{URL::asset('public/assets/app/images/testimage2.jpg')}}" class="w-full">
                                 </div>
                                 <div class="p-a">
                                     <div class="text-muted m-b-xs">
@@ -380,13 +380,13 @@
                                     <div class="m-b h-2x"><a href="" class="_800">[Cửa Hàng] Bún cua hà nội</a></div>
                                     <div class="m-b h-3x">
                                         <div class="m-b-sm">Liked:</div>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a0.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a0.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a1.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a1.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a2.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a2.jpg')}}"
                                                         class="w-32 rounded"></a>
-                                        <a href=""><img src="{{URL::asset('assets/ui_kit/assets/images/a3.jpg')}}"
+                                        <a href=""><img src="{{URL::asset('public/assets/ui_kit/assets/images/a3.jpg')}}"
                                                         class="w-32 rounded"></a>
                                         <a class="btn btn-sm danger rounded"><i class="fa fa-plus"></i> 99</a>
                                     </div>

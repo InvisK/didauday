@@ -5,7 +5,7 @@
                 <div class="col-md-2 clearfix">
                     <!-- brand -->
                     <a class="navbar-brand">
-                        <img src="{{URL::asset('assets/app/images/logo.jpg')}}" alt=".">
+                        <img src="{{URL::asset('public/assets/app/images/logo.jpg')}}" alt=".">
                         <span class="hidden-folded inline">Đi Đâu Đây ?</span>
                     </a>
                     <!-- / brand -->
@@ -48,7 +48,7 @@
                     <div class="post-list m-b-md text-primary-hover">
                         <div class="post-item clearfix m-b">
                             <a href="" class="pull-left m-r">
-                                <img src="{{URL::asset('assets/ui_kit/assets/images/b0.jpg')}}" class="w-xxs">
+                                <img src="{{URL::asset('public/assets/ui_kit/assets/images/b0.jpg')}}" class="w-xxs">
                             </a>
                             <div class="clear">
                                 <div class="post-title _600"><a href="">Quodsi ipsam hostm undique atque absolutam</a>
@@ -60,7 +60,7 @@
                         </div>
                         <div class="post-item clearfix m-b">
                             <a href="" class="pull-left m-r">
-                                <img src="{{URL::asset('assets/ui_kit/assets/images/b1.jpg')}}" class="w-xxs">
+                                <img src="{{URL::asset('public/assets/ui_kit/assets/images/b1.jpg')}}" class="w-xxs">
                             </a>
                             <div class="clear">
                                 <div class="post-title _600"><a href="">Cum salvum esse flentes sui ose sleseo</a></div>
@@ -82,14 +82,14 @@
                 <div class="col-md-6 col-lg-3">
                     <h6 class="text-u-c m-b">Photo</h6>
                     <div class="clearfix m-b-md">
-                        <a href="" class="pull-left"><img src="{{URL::asset('assets/ui_kit/assets/images/b2.jpg')}}" alt="." class="w-xxs"></a>
-                        <a href="" class="pull-left"><img src="{{URL::asset('assets/ui_kit/assets/images/b3.jpg')}}" alt="." class="w-xxs"></a>
-                        <a href="" class="pull-left"><img src="{{URL::asset('assets/ui_kit/assets/images/b4.jpg')}}" alt="." class="w-xxs"></a>
-                        <a href="" class="pull-left"><img src="{{URL::asset('assets/ui_kit/assets/images/b5.jpg')}}" alt="." class="w-xxs"></a>
-                        <a href="" class="pull-left"><img src="{{URL::asset('assets/ui_kit/assets/images/b6.jpg')}}" alt="." class="w-xxs"></a>
-                        <a href="" class="pull-left"><img src="{{URL::asset('assets/ui_kit/assets/images/b7.jpg')}}" alt="." class="w-xxs"></a>
-                        <a href="" class="pull-left"><img src="{{URL::asset('assets/ui_kit/assets/images/b8.jpg')}}" alt="." class="w-xxs"></a>
-                        <a href="" class="pull-left"><img src="{{URL::asset('assets/ui_kit/assets/images/b9.jpg')}}" alt="." class="w-xxs"></a>
+                        <a href="" class="pull-left"><img src="{{URL::asset('public/assets/ui_kit/assets/images/b2.jpg')}}" alt="." class="w-xxs"></a>
+                        <a href="" class="pull-left"><img src="{{URL::asset('public/assets/ui_kit/assets/images/b3.jpg')}}" alt="." class="w-xxs"></a>
+                        <a href="" class="pull-left"><img src="{{URL::asset('public/assets/ui_kit/assets/images/b4.jpg')}}" alt="." class="w-xxs"></a>
+                        <a href="" class="pull-left"><img src="{{URL::asset('public/assets/ui_kit/assets/images/b5.jpg')}}" alt="." class="w-xxs"></a>
+                        <a href="" class="pull-left"><img src="{{URL::asset('public/assets/ui_kit/assets/images/b6.jpg')}}" alt="." class="w-xxs"></a>
+                        <a href="" class="pull-left"><img src="{{URL::asset('public/assets/ui_kit/assets/images/b7.jpg')}}" alt="." class="w-xxs"></a>
+                        <a href="" class="pull-left"><img src="{{URL::asset('public/assets/ui_kit/assets/images/b8.jpg')}}" alt="." class="w-xxs"></a>
+                        <a href="" class="pull-left"><img src="{{URL::asset('public/assets/ui_kit/assets/images/b9.jpg')}}" alt="." class="w-xxs"></a>
                     </div>
                 </div>
             </div>

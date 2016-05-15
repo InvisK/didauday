@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="didauday">
 <head>
     <meta charset="utf-8"/>
     <title>DiDauDay</title>
@@ -369,7 +369,7 @@
                     </div>
                 </div>
             </div> -->
-            <div class="col-lg-12">
+            <div class="col-lg-12" ng-controller="HomeController">
                 <div class="row gutter-0">
                     <div class="white r box-shadow-z0 m-b navbar-md">
                         <div class="row">
@@ -380,7 +380,7 @@
                                 </a>
                                 <!-- brand -->
                                 <a class="navbar-brand">
-                                    <span class="hidden-folded inline">Ăn uống</span>
+                                    <span class="hidden-folded inline">Ăn uống {{ hoten }}</span>
                                 </a>
                                 <div class="collapse navbar-toggleable-sm" id="navbar-2">
                                     <form class="navbar-form form-inline navbar-item m-l v-m" role="search">
@@ -414,15 +414,15 @@
                     </div>
                 </div>
                 <div class="row gutter-0 white margin-top-14">
-                    <div class="col-lg-12 margin-top-fixed-content gutter-10 box-shadow-z2 ">
-                        <div class="col-lg-3">
+                    <div class="col-lg-12 margin-top-fixed-content gutter-10 box-shadow-z2">
+                        <div class="col-lg-3" ng-repeat="sv in services">
                             <div class="box">
                                 <div class="item">
                                     <div class="item-overlay active p-a">
                                         <a class="pull-right text-white _800">15%</a>
                                         <a href="" class="pull-left text-u-c label label-md danger">Food</a>
                                     </div>
-                                    <img src="<?php echo asset('public/assets/app/images/testimage.jpg'); ?>"
+                                    <img src="<?php echo asset('{{sv.image}}'); ?>"
                                          class="w-full">
                                 </div>
                                 <div class="p-a">
@@ -430,7 +430,7 @@
                                         <a href="" class="m-r"><i class="fa fa-heart-o"></i> 34</a>
                                         <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
                                     </div>
-                                    <div class="h-1x"><a href="" class="_800">[Cửa Hàng] Bún cua hà nội</a></div>
+                                    <div class="h-1x"><a href="" class="_800">{{ sv.name }}</a></div>
                                     <div class="m-b h-3x">
                                         <div class="m-b-sm">Liked:</div>
                                         <a href=""><img
@@ -451,114 +451,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="box">
-                                <div class="item">
-                                    <div class="item-overlay active p-a">
-                                        <a class="pull-right text-white _800">15%</a>
-                                        <a href="" class="pull-left text-u-c label label-md danger">Food</a>
-                                    </div>
-                                    <img src="<?php echo asset('public/assets/app/images/testimage2.jpg'); ?>"
-                                         class="w-full">
-                                </div>
-                                <div class="p-a">
-                                    <div class="text-muted m-b-xs">
-                                        <a href="" class="m-r"><i class="fa fa-heart-o"></i> 34</a>
-                                        <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
-                                    </div>
-                                    <div class="h-1x"><a href="" class="_800">[Cửa Hàng] Bún cua hà nội</a></div>
-                                    <div class="m-b h-3x">
-                                        <div class="m-b-sm">Liked:</div>
-                                        <a href=""><img
-                                                src="<?php echo asset('public/assets/ui_kit/assets/images/a0.jpg'); ?>"
-                                                class="w-32 rounded"></a>
-                                        <a href=""><img
-                                                src="<?php echo asset('public/assets/ui_kit/assets/images/a1.jpg'); ?>"
-                                                class="w-32 rounded"></a>
-                                        <a href=""><img
-                                                src="<?php echo asset('public/assets/ui_kit/assets/images/a2.jpg'); ?>"
-                                                class="w-32 rounded"></a>
-                                        <a href=""><img
-                                                src="<?php echo asset('public/assets/ui_kit/assets/images/a3.jpg'); ?>"
-                                                class="w-32 rounded"></a>
-                                        <a class="btn btn-sm danger rounded"><i class="fa fa-plus"></i> 99</a>
-                                    </div>
-                                    <div><a href="" class="btn btn-xs white">Read More</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="box">
-                                <div class="item">
-                                    <div class="item-overlay active p-a">
-                                        <a class="pull-right text-white _800">15%</a>
-                                        <a href="" class="pull-left text-u-c label label-md danger">Food</a>
-                                    </div>
-                                    <img src="<?php echo asset('public/assets/app/images/testimage3.jpg'); ?>"
-                                         class="w-full">
-                                </div>
-                                <div class="p-a">
-                                    <div class="text-muted m-b-xs">
-                                        <a href="" class="m-r"><i class="fa fa-heart-o"></i> 34</a>
-                                        <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
-                                    </div>
-                                    <div class="h-1x"><a href="" class="_800">[Cửa Hàng] Bún cua hà nội</a></div>
-                                    <div class="m-b h-3x">
-                                        <div class="m-b-sm">Liked:</div>
-                                        <a href=""><img
-                                                src="<?php echo asset('public/assets/ui_kit/assets/images/a0.jpg'); ?>"
-                                                class="w-32 rounded"></a>
-                                        <a href=""><img
-                                                src="<?php echo asset('public/assets/ui_kit/assets/images/a1.jpg'); ?>"
-                                                class="w-32 rounded"></a>
-                                        <a href=""><img
-                                                src="<?php echo asset('public/assets/ui_kit/assets/images/a2.jpg'); ?>"
-                                                class="w-32 rounded"></a>
-                                        <a href=""><img
-                                                src="<?php echo asset('public/assets/ui_kit/assets/images/a3.jpg'); ?>"
-                                                class="w-32 rounded"></a>
-                                        <a class="btn btn-sm danger rounded"><i class="fa fa-plus"></i> 99</a>
-                                    </div>
-                                    <div><a href="" class="btn btn-xs white">Read More</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="box">
-                                <div class="item">
-                                    <div class="item-overlay active p-a">
-                                        <a class="pull-right text-white _800">15%</a>
-                                        <a href="" class="pull-left text-u-c label label-md danger">Food</a>
-                                    </div>
-                                    <img src="<?php echo asset('public/assets/app/images/testimage4.jpg'); ?>"
-                                         class="w-full">
-                                </div>
-                                <div class="p-a">
-                                    <div class="text-muted m-b-xs">
-                                        <a href="" class="m-r"><i class="fa fa-heart-o"></i> 34</a>
-                                        <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
-                                    </div>
-                                    <div class="h-1x"><a href="" class="_800">[Cửa Hàng] Bún cua hà nội</a></div>
-                                    <div class="m-b h-3x">
-                                        <div class="m-b-sm">Liked:</div>
-                                        <a href=""><img
-                                                src="<?php echo asset('public/assets/ui_kit/assets/images/a0.jpg'); ?>"
-                                                class="w-32 rounded"></a>
-                                        <a href=""><img
-                                                src="<?php echo asset('public/assets/ui_kit/assets/images/a1.jpg'); ?>"
-                                                class="w-32 rounded"></a>
-                                        <a href=""><img
-                                                src="<?php echo asset('public/assets/ui_kit/assets/images/a2.jpg'); ?>"
-                                                class="w-32 rounded"></a>
-                                        <a href=""><img
-                                                src="<?php echo asset('public/assets/ui_kit/assets/images/a3.jpg'); ?>"
-                                                class="w-32 rounded"></a>
-                                        <a class="btn btn-sm danger rounded"><i class="fa fa-plus"></i> 99</a>
-                                    </div>
-                                    <div><a href="" class="btn btn-xs white">Read More</a></div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -951,6 +844,24 @@
                 </div>
             </div>
         </div>
+
+    </div>
+    <button class="btn info active" data-toggle="modal" data-target="#m-a-a" ui-toggle-class="zoom" ui-target="#animate">Zoom</button>
+    <div id="m-a-a" class="modal fade animate ng-scope in" data-backdrop="true">
+        <div class="modal-dialog" id="animate" ui-class="zoom">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal</h5>
+                </div>
+                <div class="modal-body text-center p-lg">
+                    <p>Are you sure to execute this action?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn dark-white p-x-md" data-dismiss="modal">No</button>
+                    <button type="button" class="btn danger p-x-md" data-dismiss="modal">Yes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div>
     </div>
     <style>
 
@@ -1193,6 +1104,8 @@
 
 <!--Slick Slider-->
 <script src="<?php echo asset('public/assets/app/temp/js/slick/slick.min.js'); ?>" type="text/javascript"></script>
+<script src="<?php echo asset('public/assets/app/lib/angular.min.js'); ?>"></script>
 <script src="<?php echo asset('public/assets/app/temp/js/myscript.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/temp/js/ngscript.js'); ?>"></script>
 </body>
 </html>

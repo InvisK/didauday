@@ -6,7 +6,7 @@
             </a>
             <!-- brand -->
             <a class="navbar-brand">
-                <img src="{{URL::asset('assets/app/images/logo.jpg')}}" alt=".">
+                <img src="{{URL::asset('public/assets/app/images/logo.jpg')}}" alt=".">
                 <span class="hidden-folded inline">Đi Đâu Đây ?</span>
             </a>
             <!-- / brand -->
@@ -24,7 +24,7 @@
                             <ul class="list-group list-group-gap m-a-0">
                                 <li class="list-group-item black lt box-shadow-z0 b">
           <span class="pull-left m-r">
-            <img src="{{URL::asset('assets/ui_kit/assets/images/a0.jpg')}}" alt="..." class="w-40 img-circle">
+            <img src="{{URL::asset('public/assets/ui_kit/assets/images/a0.jpg')}}" alt="..." class="w-40 img-circle">
           </span>
           <span class="clear block">
             Use awesome <a href="" class="text-primary">animate.css</a><br>
@@ -33,7 +33,7 @@
                                 </li>
                                 <li class="list-group-item black lt box-shadow-z0 b">
           <span class="pull-left m-r">
-            <img src="{{URL::asset('assets/ui_kit/assets/images/a1.jpg')}}" alt="..." class="w-40 img-circle">
+            <img src="{{URL::asset('public/assets/ui_kit/assets/images/a1.jpg')}}" alt="..." class="w-40 img-circle">
           </span>
           <span class="clear block">
             <a href="" class="text-primary">Joe</a> Added you as friend<br>
@@ -42,7 +42,7 @@
                                 </li>
                                 <li class="list-group-item dark-white text-color box-shadow-z0 b">
           <span class="pull-left m-r">
-            <img src="{{URL::asset('assets/ui_kit/assets/images/a2.jpg')}}" alt="..." class="w-40 img-circle">
+            <img src="{{URL::asset('public/assets/ui_kit/assets/images/a2.jpg')}}" alt="..." class="w-40 img-circle">
           </span>
           <span class="clear block">
             <a href="" class="text-primary">Danie</a> sent you a message<br>
@@ -61,7 +61,7 @@
                 <small class="block l-h-1x text-muted"><i class="material-icons text-md"></i> Hồ Chí Minh, VN</small>
               </span>
               <span class="avatar w-32">
-                <img src="{{URL::asset('assets/ui_kit/assets/images/a1.jpg')}}" alt="...">
+                <img src="{{URL::asset('public/assets/ui_kit/assets/images/a1.jpg')}}" alt="...">
                 <i class="away b-white left"></i>
               </span>
                     </a>
