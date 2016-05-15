@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic&subset=latin,vietnamese);
+
+#search{  /* To fix main menu container */
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.icon-control {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+.p-x-1 {
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+.select2-container--bootstrap .select2-dropdown {
+    margin-top: -82px;
+}
+.carousel-control .glyphicon {
+    top: 45%;
+    left: 88%;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.carousel-control .glyphicon-chevron-left {
+    left: -12%;
+}
+
+#menu {
+    margin-top: 50px;
+}
+
+#services {
+    float: left;
+    width: 180px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#inpSearch,#btnSearch {
+    float: left;
+    margin-top: 10px;
+}
+
+#inpSearch {
+    margin-left: 3px;
+    font-family: 'Open Sans', sans-serif;
+    height: 34px;
+}
+
+.item-bg {
+    height: 132%;
+}
+
+#inpSearch .input-search {
+    padding: 5px;
+    height: 34px;
+    border: 1px solid #C2CAD8;
+    width: 300px;
+    border-radius: 5px;
+}
+
+#btnSearch .btn-submit {
+    height: 34px;
+    margin-left: -5px;
+}
+
+.carousel img {
+    width: auto;
+}
+
