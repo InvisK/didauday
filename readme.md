@@ -8,7 +8,7 @@ git clone https://github.com/InvisK/didauday.git .
 git checkout develop
 ```
 
-### 2. Cập nhật composer :
+### 2. Cập nhật và cài đặt các package của app :
 ```
 composer update
 ```
