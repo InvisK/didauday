@@ -17,6 +17,7 @@ class CreateLocationCodeTable extends Migration
             $table->integer('location_news_id');
             $table->string('promo_value');
             $table->integer('promo_unit_id');
+            $table->integer('limit');
             $table->string('keyword');
             $table->timestamps();
         });
