@@ -16,6 +16,7 @@ class CreateLocationTypesTable extends Migration
             $table->increments('id');
             $table->string('key');
             $table->string('name');
+            $table->string('keyword');
             $table->timestamps();
         });
     }
