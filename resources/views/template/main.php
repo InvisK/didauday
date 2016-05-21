@@ -18,36 +18,36 @@
           href="<?php echo asset('public/assets/ui_kit/assets/images/logo.png'); ?>">
 
     <!-- style -->
-    <link rel="stylesheet" href="<?php echo asset('public/assets/app/css/animate.min.css'); ?>"
+    <link rel="stylesheet" href="<?php echo asset('public/assets/uikit/css/animate.min.css'); ?>"
           type="text/css"/>
-    <link rel="stylesheet" href="<?php echo asset('public/assets/app/css/glyphicons/glyphicons.css'); ?>"
+    <link rel="stylesheet" href="<?php echo asset('public/assets/uikit/css/glyphicons/glyphicons.css'); ?>"
           type="text/css"/>
     <link rel="stylesheet"
           href="<?php echo asset('public/assets/app/css/font-awesome/css/font-awesome.min.css'); ?>"
           type="text/css"/>
     <link rel="stylesheet"
-          href="<?php echo asset('public/assets/app/css/material-design-icons/material-design-icons.css'); ?>"
+          href="<?php echo asset('public/assets/uikit/css/material-design-icons/material-design-icons.css'); ?>"
           type="text/css"/>
 
     <link rel="stylesheet"
           href="<?php echo asset('public/assets/app/css/bootstrap/dist/css/bootstrap.min.css'); ?>"
           type="text/css"/>
     <!-- build:css ../assets/styles/app.min.css -->
-    <link rel="stylesheet" href="<?php echo asset('public/assets/app/css/app.css'); ?>" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo asset('public/assets/uikit/css/app.css'); ?>" type="text/css"/>
     <!-- endbuild -->
-    <link rel="stylesheet" href="<?php echo asset('public/assets/app/css/font.css'); ?>" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo asset('public/assets/uikit/css/font.css'); ?>" type="text/css"/>
     <!--Slick Slider-->
-    <link href="<?php echo asset('public/assets/app/temp/css/slick.css'); ?>" rel="stylesheet" type="text/css"
+    <link href="<?php echo asset('public/assets/metronic/css/slick.css'); ?>" rel="stylesheet" type="text/css"
           media="screen"/>
-    <link href="<?php echo asset('public/assets/app/temp/css/slick-theme.css'); ?>" rel="stylesheet" type="text/css"
+    <link href="<?php echo asset('public/assets/metronic/css/slick-theme.css'); ?>" rel="stylesheet" type="text/css"
           media="screen"/>
-    <link rel="stylesheet" type="text/css" href="<?php echo asset('public/assets/app/temp/css/select2.min.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo asset('public/assets/metronic/css/select2.min.css'); ?>">
     <link rel="stylesheet" type="text/css"
-          href="<?php echo asset('public/assets/app/temp/css/select2-bootstrap.min.css'); ?>">
-    <link rel="stylesheet" href="<?php echo asset('public/assets/app/temp/css/bootstrap-switch.min.css'); ?>">
+          href="<?php echo asset('public/assets/metronic/css/select2-bootstrap.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo asset('public/assets/metronic/css/bootstrap-switch.min.css'); ?>">
 
-    <link rel="stylesheet" type="text/css" href="<?php echo asset('public/assets/app/temp/css/plugins.min.css'); ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo asset('public/assets/app/temp/css/style.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo asset('public/assets/metronic/css/plugins.min.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo asset('public/assets/app/css/style-home.css'); ?>">
 </head>
 
 <body class="">
@@ -1088,7 +1088,7 @@
                 </div>
             </div>
             <div class="icon-control">
-                <a href="#" class="scrollup"><img src="<?php echo asset('public/assets/app/temp/img/icon/icon2.png'); ?>" alt=""></a>
+                <a href="#" class="scrollup"><img src="<?php echo asset('public/assets/app/images/icon/icon2.png'); ?>" alt=""></a>
             </div>
         </div>
     </div>
@@ -1103,38 +1103,39 @@
     src="<?php echo asset('public/assets/app/js/libs/jquery.storageapi.min.js'); ?>"></script>
 <script src="<?php echo asset('public/assets/app/js/libs/pace.min.js'); ?>"></script>
 
-<script src="<?php echo asset('public/assets/app/js/libs/ui/config.lazyload.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/uikit/js/config.lazyload.js'); ?>"></script>
 
-<script src="<?php echo asset('public/assets/app/js/libs/ui/palette.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-load.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-jp.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-include.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-device.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-form.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-nav.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-screenfull.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-scroll-to.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-toggle-class.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/uikit/js/palette.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/uikit/js/ui-load.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/uikit/js/ui-jp.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/uikit/js/ui-include.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/uikit/js/ui-device.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/uikit/js/ui-form.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/uikit/js/ui-nav.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/uikit/js/ui-screenfull.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/uikit/js/ui-scroll-to.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/uikit/js/ui-toggle-class.js'); ?>"></script>
 
-<script src="<?php echo asset('public/assets/app/lib/angular.min.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/temp/js/ngscript.js'); ?>"></script>
+
 
 
 <!-- ajax -->
 <script src="<?php echo asset('public/assets/app/js/libs/jquery.pjax.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/js/libs/ui/ajax.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/temp/js/jquery.uniform.min.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/temp/js/bootstrap-switch.min.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/temp/js/select2.full.min.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/temp/js/jquery.pulsate.min.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/temp/js/app.min.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/uikit/js/ajax.js'); ?>"></script>
+<!-- Metronic -->
+<script src="<?php echo asset('public/assets/metronic/js/jquery.uniform.min.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/metronic/js/bootstrap-switch.min.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/metronic/js/select2.full.min.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/metronic/js/jquery.pulsate.min.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/metronic/js/app.min.js'); ?>"></script>
 
-<script src="<?php echo asset('public/assets/app/temp/js/components-select2.min.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/metronic/js/components-select2.min.js'); ?>"></script>
 
 <!--Slick Slider-->
-<script src="<?php echo asset('public/assets/app/temp/js/slick/slick.min.js'); ?>" type="text/javascript"></script>
-
-<script src="<?php echo asset('public/assets/app/temp/js/myscript.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/metronic/js/slick.min.js'); ?>" type="text/javascript"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/angular.min.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/ngscript.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/myscript.js'); ?>"></script>
 
 </body>
 </html>
