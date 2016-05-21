@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>@yield('title')</title>
-    <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- for ios 7 style, multi-resolution icon of 152x152 -->
@@ -17,23 +17,29 @@
     <link rel="shortcut icon" sizes="196x196" href="{{URL::asset('public/assets/ui_kit/assets/images/logo.png')}}">
 
     <!-- style -->
-    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/animate.css/animate.min.css')}}" type="text/css" />
-    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/glyphicons/glyphicons.css')}}" type="text/css" />
-    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/font-awesome/css/font-awesome.min.css')}}" type="text/css" />
-    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/material-design-icons/material-design-icons.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/animate.css/animate.min.css')}}"
+          type="text/css"/>
+    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/glyphicons/glyphicons.css')}}"
+          type="text/css"/>
+    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/font-awesome/css/font-awesome.min.css')}}"
+          type="text/css"/>
+    <link rel="stylesheet"
+          href="{{URL::asset('public/assets/ui_kit/assets/material-design-icons/material-design-icons.css')}}"
+          type="text/css"/>
 
-    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/bootstrap/dist/css/bootstrap.min.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/bootstrap/dist/css/bootstrap.min.css')}}"
+          type="text/css"/>
     <!-- build:css ../assets/styles/app.min.css -->
-    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/styles/app.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/styles/app.css')}}" type="text/css"/>
     <!-- endbuild -->
-    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/styles/font.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{URL::asset('public/assets/ui_kit/assets/styles/font.css')}}" type="text/css"/>
     @yield('styles')
 </head>
 
 <body class="">
 <div class="body-wrap">
-        @include('partials.navigation')
-        @yield('content')
+    @include('partials.navigation')
+    @yield('content')
 
 </div>
 @include('partials.footer')
