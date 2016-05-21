@@ -18,24 +18,24 @@
           href="<?php echo asset('public/assets/ui_kit/assets/images/logo.png'); ?>">
 
     <!-- style -->
-    <link rel="stylesheet" href="<?php echo asset('public/assets/ui_kit/assets/animate.css/animate.min.css'); ?>"
+    <link rel="stylesheet" href="<?php echo asset('public/assets/app/css/animate.min.css'); ?>"
           type="text/css"/>
-    <link rel="stylesheet" href="<?php echo asset('public/assets/ui_kit/assets/glyphicons/glyphicons.css'); ?>"
-          type="text/css"/>
-    <link rel="stylesheet"
-          href="<?php echo asset('public/assets/ui_kit/assets/font-awesome/css/font-awesome.min.css'); ?>"
+    <link rel="stylesheet" href="<?php echo asset('public/assets/app/css/glyphicons/glyphicons.css'); ?>"
           type="text/css"/>
     <link rel="stylesheet"
-          href="<?php echo asset('public/assets/ui_kit/assets/material-design-icons/material-design-icons.css'); ?>"
+          href="<?php echo asset('public/assets/app/css/font-awesome/css/font-awesome.min.css'); ?>"
+          type="text/css"/>
+    <link rel="stylesheet"
+          href="<?php echo asset('public/assets/app/css/material-design-icons/material-design-icons.css'); ?>"
           type="text/css"/>
 
     <link rel="stylesheet"
-          href="<?php echo asset('public/assets/ui_kit/assets/bootstrap/dist/css/bootstrap.min.css'); ?>"
+          href="<?php echo asset('public/assets/app/css/bootstrap/dist/css/bootstrap.min.css'); ?>"
           type="text/css"/>
     <!-- build:css ../assets/styles/app.min.css -->
-    <link rel="stylesheet" href="<?php echo asset('public/assets/ui_kit/assets/styles/app.css'); ?>" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo asset('public/assets/app/css/app.css'); ?>" type="text/css"/>
     <!-- endbuild -->
-    <link rel="stylesheet" href="<?php echo asset('public/assets/ui_kit/assets/styles/font.css'); ?>" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo asset('public/assets/app/css/font.css'); ?>" type="text/css"/>
     <!--Slick Slider-->
     <link href="<?php echo asset('public/assets/app/temp/css/slick.css'); ?>" rel="stylesheet" type="text/css"
           media="screen"/>
@@ -380,7 +380,7 @@
                                 </a>
                                 <!-- brand -->
                                 <a class="navbar-brand">
-                                    <span class="hidden-folded inline">Ăn uống {{ hoten }}</span>
+                                    <span class="hidden-folded inline">Ăn uống</span>
                                 </a>
                                 <div class="collapse navbar-toggleable-sm" id="navbar-2">
                                     <form class="navbar-form form-inline navbar-item m-l v-m" role="search">
@@ -423,7 +423,7 @@
                                         <a href="" class="pull-left text-u-c label label-md danger">Food</a>
                                     </div>
                                     <img src="<?php echo asset('{{sv.image}}'); ?>"
-                                         class="w-full">
+                                         class="w-full" ng-click="modal('detail',sv.id)" ui-toggle-class="zoom" ui-target="#animate">
                                 </div>
                                 <div class="p-a">
                                     <div class="text-muted m-b-xs">
@@ -452,6 +452,54 @@
                             </div>
                         </div>
 
+                    </div>
+                </div>
+                <div id="m-a-a" class="modal fade animate ng-scope in " data-backdrop="true">
+                    <div class="modal-dialog modal-lg" id="animate" ui-class="zoom">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body text-center p-lg">
+                                <div class="col-lg-6">
+                                    <div class="img-modal">
+                                        <img src="<?php echo asset('{{detail.image}}'); ?>" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 right-ct">
+                                    <div class="content-md">
+                                        <h4>{{ detail.name }}</h4>
+                                        <div class="text-muted m-b-xs">
+                                            <span class="km">Khuyến mãi 15%</span>
+                                            <a href="" class="m-r"><i class="fa fa-heart-o"></i> 34</a>
+                                            <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
+                                        </div>
+                                        <div class="content-km">
+                                            <p>
+                                                {{detail.content}}
+                                            </p>
+                                            <p>Chương trình khuyến mãi bắt đầu:</p>
+                                            <p>Từ ngày: <strong>28/05/2016</strong></p>
+                                            <p>Đến ngày: <strong>01/06/2016</strong></p>
+                                            <div class="getcode">
+                                                <a class="btn btn-sm danger rounded">Nhận code ngay</a>
+                                            </div>
+                                            <div class="other-img">
+                                                <p>Một số hình ảnh khác:</p>
+                                                <img src="http://placehold.it/84x84" alt="">
+                                                <img src="http://placehold.it/84x84" alt="">
+                                                <img src="http://placehold.it/84x84" alt="">
+                                                <img src="http://placehold.it/84x84" alt="">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+
+                            </div>
+                        </div><!-- /.modal-content -->
                     </div>
                 </div>
             </div>
@@ -846,76 +894,55 @@
         </div>
 
     </div>
-    <button class="btn info active" data-toggle="modal" data-target="#m-a-a" ui-toggle-class="zoom" ui-target="#animate">Zoom</button>
-    <div id="m-a-a" class="modal fade animate ng-scope in" data-backdrop="true">
-        <div class="modal-dialog" id="animate" ui-class="zoom">
+    <div id="m-a-a" class="modal fade animate ng-scope in " data-backdrop="true" ng-controller="HomeController">
+        <div class="modal-dialog modal-lg" id="animate" ui-class="zoom">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body text-center p-lg">
-                    <p>Are you sure to execute this action?</p>
+                    <div class="col-lg-6">
+                        <div class="img-modal">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 right-ct">
+                        <div class="content-md">
+                            <h4>{{ ten }}</h4>
+                            <div class="text-muted m-b-xs">
+                                <span class="km">Khuyến mãi 15%</span>
+                                <a href="" class="m-r"><i class="fa fa-heart-o"></i> 34</a>
+                                <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
+                            </div>
+                            <div class="content-km">
+                                <p>
+                                    Nhân dịp khai trương cửa hàng, chúng tôi xin mang tới cho quý khách hàng chương trình khuyến mãi đặc biệt cho các mặt hàng như
+                                    Bún bò, bánh tráng cuốn, phở tái....
+                                </p>
+                                <p>Chương trình khuyến mãi bắt đầu:</p>
+                                <p>Từ ngày: <strong>28/05/2016</strong></p>
+                                <p>Đến ngày: <strong>01/06/2016</strong></p>
+                                <div class="getcode">
+                                    <a class="btn btn-sm danger rounded">Nhận code ngay</a>
+                                </div>
+                                <div class="other-img">
+                                    <p>Một số hình ảnh khác:</p>
+                                    <img src="http://placehold.it/84x84" alt="">
+                                    <img src="http://placehold.it/84x84" alt="">
+                                    <img src="http://placehold.it/84x84" alt="">
+                                    <img src="http://placehold.it/84x84" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn dark-white p-x-md" data-dismiss="modal">No</button>
-                    <button type="button" class="btn danger p-x-md" data-dismiss="modal">Yes</button>
+
                 </div>
             </div><!-- /.modal-content -->
         </div>
     </div>
-    <style>
-
-        html {
-            background-color: #f0f0f0;
-        }
-        .carousel {
-            margin-top: 80px;
-        }
-        .carousel img {
-            width: auto;
-            height: 270px;
-        }
-
-        .margin-top-15 {
-            margin-top: 15px;
-        }
-
-        .margin-top-14 {
-            margin-top: -14px;
-        }
-        .gutter-10.row {
-            margin-right: -5px;
-            margin-left: -5px;
-        }
-
-        .gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
-            padding-right: 5px;
-            padding-left: 5px;
-        }
-
-        .gutter-0.row {
-            margin-right: -0px;
-            margin-left: -0px;
-        }
-
-        .gutter-0 > [class^="col-"], .gutter-0 > [class^=" col-"] {
-            padding-right: 0px;
-            padding-left: 0px;
-        }
-
-        .nopadding {
-            padding: 0 !important;
-            margin: 0 !important;
-        }
-
-        .margin-top-fixed-layout {
-            margin-top: 20px;
-        }
-
-        .margin-top-fixed-content {
-            margin-top: 10px;
-        }
-    </style>
 </div>
 <div class="container margin-top-fixed-layout">
     <div class="white r box-shadow-z0 m-b p-md">
@@ -1066,34 +1093,36 @@
         </div>
     </div>
 </div>
-<script src="<?php echo asset('public/assets/ui_kit/libs/jquery/jquery/dist/jquery.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/jquery.js'); ?>"></script>
 <!-- Bootstrap -->
-<script src="<?php echo asset('public/assets/ui_kit/libs/jquery/tether/dist/js/tether.min.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/ui_kit/libs/jquery/bootstrap/dist/js/bootstrap.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/tether.min.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/bootstrap.js'); ?>"></script>
 <!-- core -->
-<script src="<?php echo asset('public/assets/ui_kit/libs/jquery/underscore/underscore-min.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/underscore-min.js'); ?>"></script>
 <script
-    src="<?php echo asset('public/assets/ui_kit/libs/jquery/jQuery-Storage-API/jquery.storageapi.min.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/ui_kit/libs/jquery/PACE/pace.min.js'); ?>"></script>
+    src="<?php echo asset('public/assets/app/js/libs/jquery.storageapi.min.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/pace.min.js'); ?>"></script>
 
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/config.lazyload.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/ui/config.lazyload.js'); ?>"></script>
 
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/palette.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/ui-load.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/ui-jp.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/ui-include.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/ui-device.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/ui-form.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/ui-nav.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/ui-screenfull.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/ui-scroll-to.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/ui-toggle-class.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/ui/palette.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-load.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-jp.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-include.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-device.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-form.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-nav.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-screenfull.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-scroll-to.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/ui/ui-toggle-class.js'); ?>"></script>
 
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/app.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/lib/angular.min.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/temp/js/ngscript.js'); ?>"></script>
+
 
 <!-- ajax -->
-<script src="<?php echo asset('public/assets/ui_kit/libs/jquery/jquery-pjax/jquery.pjax.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/ui_kit/html/scripts/ajax.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/jquery.pjax.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/app/js/libs/ui/ajax.js'); ?>"></script>
 <script src="<?php echo asset('public/assets/app/temp/js/jquery.uniform.min.js'); ?>"></script>
 <script src="<?php echo asset('public/assets/app/temp/js/bootstrap-switch.min.js'); ?>"></script>
 <script src="<?php echo asset('public/assets/app/temp/js/select2.full.min.js'); ?>"></script>
@@ -1104,8 +1133,8 @@
 
 <!--Slick Slider-->
 <script src="<?php echo asset('public/assets/app/temp/js/slick/slick.min.js'); ?>" type="text/javascript"></script>
-<script src="<?php echo asset('public/assets/app/lib/angular.min.js'); ?>"></script>
+
 <script src="<?php echo asset('public/assets/app/temp/js/myscript.js'); ?>"></script>
-<script src="<?php echo asset('public/assets/app/temp/js/ngscript.js'); ?>"></script>
+
 </body>
 </html>

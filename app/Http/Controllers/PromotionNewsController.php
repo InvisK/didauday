@@ -12,4 +12,8 @@ class PromotionNewsController extends Controller
     public function getList(){
         return PromotionNews::take(4)->get();
     }
+
+    public function getDetail($id){
+        return PromotionNews::findOrFail($id);
+    }
 }

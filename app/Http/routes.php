@@ -20,6 +20,7 @@ Route::get('temp', function () {
 });
 
 Route::get('home',['uses' => 'PromotionNewsController@getList']);
+Route::get('detail/{id}',['uses' => 'PromotionNewsController@getDetail']);
 
 Route::get('profile', function () {
     return view('template.profile-provier');

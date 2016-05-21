@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic&subset=latin,vietnamese);
 
 #search{  /* To fix main menu container */
-    z-index: 9999;
+    z-index: 1000;
     position: fixed;
     left: 0;
     top: 0;
@@ -77,3 +77,115 @@
     width: auto;
 }
 
+
+
+html {
+    background-color: #f0f0f0;
+}
+.carousel {
+    margin-top: 20px;
+}
+.carousel img {
+    width: auto;
+    height: 270px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.margin-top-14 {
+    margin-top: -14px;
+}
+.gutter-10.row {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.gutter-0.row {
+    margin-right: -0px;
+    margin-left: -0px;
+}
+
+.gutter-0 > [class^="col-"], .gutter-0 > [class^=" col-"] {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.margin-top-fixed-layout {
+    margin-top: 20px;
+}
+
+.margin-top-fixed-content {
+    margin-top: 10px;
+}
+
+/* Fix modal */
+.modal {
+    top: 20px;
+}
+
+.modal-lg {
+    width: 1125px;
+}
+
+.modal-header {
+    padding: 5px;
+}
+.modal-body {
+    height: 537px;
+    padding: 5px;
+}
+
+.modal-content {
+    background-color: #dbdbdb;
+
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 5px;
+}
+
+.right-ct {
+    height: 100%;
+    background-color: #fff;
+    padding-right: 0;
+    padding-left: 0;
+    overflow-y: scroll;
+}
+
+/*Css Modal*/
+.content-md {
+    background-color: #fff;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.content-md h4 {
+    padding-top: 20px;
+}
+
+.content-md .km {
+    padding-right: 20px;
+    color: #F4511E;
+}
+
+.img-modal img {
+    width: 100%;
+}
+
+.other-img {
+    margin-top: 15px;
+}
+/* ENd Css Modal*/
