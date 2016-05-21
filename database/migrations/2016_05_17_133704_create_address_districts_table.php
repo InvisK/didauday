@@ -16,8 +16,7 @@ class CreateAddressDistrictsTable extends Migration
             $table->integer('id');
             $table->string('name');
             $table->string('type_name');
-            $table->string('longitude');
-            $table->string('latitude');
+            $table->string('location_point');
             $table->string('province_id');
         });
     }

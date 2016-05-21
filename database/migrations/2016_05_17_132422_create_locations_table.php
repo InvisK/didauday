@@ -27,6 +27,11 @@ class CreateLocationsTable extends Migration
             $table->integer('address_ward_id');
             $table->integer('address_district_id');
             $table->integer('address_province_id');
+            $table->string('location_point');
+            $table->integer('active_time_start');
+            $table->integer('active_time_end');
+            $table->string('price_range_start');
+            $table->string('price_range_end');
             $table->string('url');
             $table->timestamps();
 
