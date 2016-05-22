@@ -25,3 +25,5 @@ Route::get('detail/{id}',['uses' => 'PromotionNewsController@getDetail']);
 Route::get('profile', function () {
     return view('template.profile-provier');
 });
+Route::get('login',['as'=>'facebook.login','uses'=>'FacebookController@login']);
+Route::get('callback',['as'=>'facebook.callback','uses'=>'FacebookController@callback']);
