@@ -12,7 +12,6 @@ app.controller('HomeController' ,function($scope,$http){
             $http.get('http://localhost/didauday/detail/' + id).success(function(res){
                 $scope.detail = res;
                 console.log(res);
-                $scope.ten = "HAHAHAH";
             });
         }
         console.log(state,id);

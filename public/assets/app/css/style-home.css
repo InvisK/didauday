@@ -135,22 +135,21 @@ html {
     top: 20px;
 }
 
-.modal-lg {
-    width: 1125px;
-}
+
 
 .modal-header {
     padding: 5px;
 }
-.modal-body {
+
+.detail-modal .modal-lg {
+    width: 1125px;
+}
+.detail-modal .modal-body {
     height: 537px;
     padding: 5px;
 }
 
-.modal-content {
-    background-color: #dbdbdb;
 
-}
 
 .modal-footer {
     border-top: none;
