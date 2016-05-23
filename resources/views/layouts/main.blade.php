@@ -58,81 +58,124 @@
                 </a>
 
 
-
                 <!-- / brand -->
 
                 <!-- nabar right -->
-                <ul class="nav navbar-nav pull-right">
-                    <li class="nav-item dropdown">
-                        <div class="dropdown-menu text-color w-lg animated fadeInUp pull-right">
-                            <!-- search form -->
-                            <form class="navbar-form form-inline navbar-item m-l v-m ng-pristine ng-valid ng-scope"
-                                  role="search">
-                                <div class="form-group l-h m-a-0">
-                                    <div class="input-group input-group-sm">
-                                        <input type="text" class="form-control" placeholder="Search projects...">
+                @if(Auth::user())
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="nav-item dropdown pos-stc-xs">
+                            <a class="nav-link" href="" data-toggle="dropdown">
+                                <i class="material-icons"></i>
+                                <span class="label label-sm up warn">3</span>
+                            </a>
+                            <!-- dropdown -->
+                            <div class="dropdown-menu pull-right w-xl animated fadeInUp no-bg no-border no-shadow ng-scope">
+                                <div class="scrollable" style="max-height: 220px">
+                                    <ul class="list-group list-group-gap m-a-0">
+                                        <li class="list-group-item black lt box-shadow-z0 b">
+          <span class="pull-left m-r">
+            <img src="../assets/images/a0.jpg" alt="..." class="w-40 img-circle">
+          </span>
+          <span class="clear block">
+            Use awesome <a href="" class="text-primary">animate.css</a><br>
+            <small class="text-muted">10 minutes ago</small>
+          </span>
+                                        </li>
+                                        <li class="list-group-item black lt box-shadow-z0 b">
+          <span class="pull-left m-r">
+            <img src="../assets/images/a1.jpg" alt="..." class="w-40 img-circle">
+          </span>
+          <span class="clear block">
+            <a href="" class="text-primary">Joe</a> Added you as friend<br>
+            <small class="text-muted">2 hours ago</small>
+          </span>
+                                        </li>
+                                        <li class="list-group-item dark-white text-color box-shadow-z0 b">
+          <span class="pull-left m-r">
+            <img src="../assets/images/a2.jpg" alt="..." class="w-40 img-circle">
+          </span>
+          <span class="clear block">
+            <a href="" class="text-primary">Danie</a> sent you a message<br>
+            <small class="text-muted">1 day ago</small>
+          </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- / dropdown -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle clear" data-toggle="dropdown">
+              <span class="hidden-md-down nav-text m-r-sm text-right">
+                <span class="block l-h-1x _500">{!! Auth::user()->name !!}</span>
+                <small class="block l-h-1x text-muted"><i class="material-icons text-md"></i> Los Angeles, CA</small>
+              </span>
+              <span class="avatar w-50">
+                <img src="{!! Auth::user()->avatar !!}" alt="..." height="40">
+                <i class="away b-white left"></i>
+              </span>
+                            </a>
+                            <div class="dropdown-menu pull-right dropdown-menu-scale ng-scope">
+                                <a class="dropdown-item" ui-sref="app.inbox.list" href="#/app/inbox/inbox/">
+                                    <span>Inbox</span>
+                                    <span class="label warn m-l-xs">3</span>
+                                </a>
+                                <a class="dropdown-item" ui-sref="app.page.profile" href="#/app/page/profile">
+                                    <span>Profile</span>
+                                </a>
+                                <a class="dropdown-item" ui-sref="app.page.setting" href="#/app/page/setting">
+                                    <span>Settings</span>
+                                    <span class="label primary m-l-xs">3/9</span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" ui-sref="app.docs" href="#/app/docs">
+                                    Need help?
+                                </a>
+                                <a class="dropdown-item" ui-sref="access.signin" href="{{ url('/logout') }}">Sign out</a>
+                            </div>
+                        </li>
+                    </ul>
+                    @else()
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="nav-item dropdown">
+                            <div class="dropdown-menu text-color w-lg animated fadeInUp pull-right">
+                                <!-- search form -->
+                                <form class="navbar-form form-inline navbar-item m-l v-m ng-pristine ng-valid ng-scope"
+                                      role="search">
+                                    <div class="form-group l-h m-a-0">
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control" placeholder="Search projects...">
                                             <span class="input-group-btn">
                                                 <button type="submit" class="btn white b-a no-shadow"><i
                                                             class="fa fa-search"></i></button>
                                             </span>
+                                        </div>
                                     </div>
-
-                                </div>
-
-                            </form>
-                            <!-- / search form -->
-                        </div>
-                        <a class="nav-link" href="" data-toggle="modal" data-target="#m-a-f">
-                            <span>Test Modal</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-
-                        <a class="nav-link" href="" data-toggle="dropdown" aria-expanded="false">
-                            <span>Login</span>
-                        </a>
-                        <!-- dropdown -->
-                        <div class="dropdown-menu w-xl animated fadeInUp pull-right p-a-0 ng-scope">
-                            <div class="box-color m-a-0">
-                                <div class="box-header b-b p-y-sm">
-                                    <strong>Sign in</strong>
-                                </div>
-                                <div class="box-body">
-                                    <form role="form" class="ng-pristine ng-valid">
-                                        <div class="form-group">
-                                            <label>Email</label>
-                                            <input type="email" class="form-control" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Password</label>
-                                            <input type="password" class="form-control" placeholder="Password">
-                                        </div>
-                                        <div class="checkbox">
-                                            <label class="md-check">
-                                                <input type="checkbox"><i></i> Remember me
-                                            </label>
-                                        </div>
-                                        <div class="m-t m-b-xs">
-                                            <button type="submit" class="btn btn-sm primary text-u-c p-x _600">Sign in
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
+                                </form>
+                                <!-- / search form -->
                             </div>
-                        </div>
-                        <!-- / dropdown -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
+                            <!--  <a class="nav-link" href="" data-toggle="modal" data-target="#m-a-f">
+                                 <span>Test Modal</span>
+                             </a> -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="{!! URL::route('facebook.login') !!}" onclick="window.open(this.href, 'mywin',
+'left=400,top=100,width=600,height=500,toolbar=1,resizable=0'); return false;" target="_blank" data-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-outline rounded b-primary text-primary">Login with Facebook</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
                             <span class="hidden-xs-down btn btn-sm rounded btn-outline b-danger text-u-c _600">
                                 Sign Up
                             </span>
                             <span class="hidden-sm-up ">
                                 <i class="material-icons"></i>
                             </span>
-                        </a>
-                    </li>
-                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                @endif()
                 <!-- / navbar right -->
                 <!-- navbar collapse -->
                 <div class="collapse navbar-toggleable-sm" id="navbar-3">
@@ -464,6 +507,51 @@
     <script src="{{ asset('public/assets/app/js/libs/angular.min.js')}}"></script>
     <script src="{{ asset('public/assets/app/js/ngscript.js')}}"></script>
     <script src="{{ asset('public/assets/app/js/myscript.js')}}"></script>
+    <script type="text/javascript">
+        if (window.location.hash && window.location.hash == '#_=_') {
+            if (window.history && history.pushState) {
+                window.history.pushState("", document.title, window.location.pathname);
+            } else {
+                // Prevent scrolling by storing the page's current scroll offset
+                var scroll = {
+                    top: document.body.scrollTop,
+                    left: document.body.scrollLeft
+                };
+                window.location.hash = '';
+                // Restore the scroll offset, should be flicker free
+                document.body.scrollTop = scroll.top;
+                document.body.scrollLeft = scroll.left;
+            }
+        }
 
+    </script>
+   <!--  <script type="text/javascript">
+
+        $(document).ready(function() {
+            initFacebookConnect();
+        });
+
+        var fbTimer, fbChildWindow;
+        function fbPolling() {
+            if(fbChildWindow && fbChildWindow.closed) {
+                // The popup has been closed, stop the timer and reload window.
+                clearInterval(fbTimer);
+                window.location.href = window.location.href;
+            }
+        }
+        function initFacebookConnect() {
+            $('#connect-fb').click(function(event) {
+                event.preventDefault();
+
+                var url = $(this).attr('href');
+                fbChildWindow = window.open(url, 'Facebook', 'status=1, resizable=0');
+                fbTimer = setInterval('fbPolling()', 1000);
+            });
+        }
+    </script> -->
+    <script>
+        window.close();
+        window.opener.location.reload();
+    </script>
 </body>
 </html>
