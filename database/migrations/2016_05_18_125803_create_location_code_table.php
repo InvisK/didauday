@@ -13,8 +13,10 @@ class CreateLocationCodeTable extends Migration
     public function up()
     {
         Schema::create('location_code', function (Blueprint $table) {
-            $table->integer('id');
+            $table->increments('id');
             $table->integer('location_news_id');
+            $table->string('amount');
+            $table->string('start_words');
             $table->string('promo_value');
             $table->integer('promo_unit_id');
             $table->integer('limit');

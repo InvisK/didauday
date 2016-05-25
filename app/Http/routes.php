@@ -28,3 +28,8 @@ Route::get('profile', function () {
 Route::get('login',['as'=>'facebook.login','uses'=>'FacebookController@login']);
 Route::get('callback',['as'=>'facebook.callback','uses'=>'FacebookController@callback']);
 Route::get('logout',['as'=>'facebook.logout','uses'=>'FacebookController@logout']);
+
+
+Route::group(['prefix' => 'code'], function () {
+    Route::get('get-unit',['as'=>'code.get-unit','uses'=>'LocationCodeController@getPromotionUnitList']);
+});

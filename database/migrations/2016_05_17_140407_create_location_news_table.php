@@ -13,7 +13,7 @@ class CreateLocationNewsTable extends Migration
     public function up()
     {
         Schema::create('location_news', function (Blueprint $table) {
-            $table->integer('id');
+            $table->increments('id');
             $table->integer('location_id');
             $table->string('title');
             $table->string('body');

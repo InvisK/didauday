@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="{{ asset('public/assets/uikit/css/font.css')}}" type="text/css"/>
 
     @yield('css')
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/app/css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/app/css/style-home.css')}}">
 </head>
 
@@ -154,10 +154,11 @@
                                 </form>
                                 <!-- / search form -->
                             </div>
-                            <!--  <a class="nav-link" href="" data-toggle="modal" data-target="#m-a-f">
+                              <a class="nav-link" href="" data-toggle="modal" data-target="#location_code_create_modal">
                                  <span>Test Modal</span>
-                             </a> -->
+                             </a>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="{!! URL::route('facebook.login') !!}" onclick="window.open(this.href, 'mywin',
 'left=400,top=100,width=600,height=500,toolbar=1,resizable=0'); return false;" target="_blank" data-toggle="dropdown" aria-expanded="false">
@@ -475,7 +476,7 @@
         </div>
     </div>
 
-    @include('widgets.testmodal')
+    @include('location_code.index')
     <script src="{{ asset('public/assets/app/js/libs/jquery.js')}}"></script>
     <!-- Bootstrap -->
     <script src="{{ asset('public/assets/app/js/libs/tether.min.js')}}"></script>
@@ -505,8 +506,11 @@
 
     @yield('script')
     <script src="{{ asset('public/assets/app/js/libs/angular.min.js')}}"></script>
-    <script src="{{ asset('public/assets/app/js/ngscript.js')}}"></script>
     <script src="{{ asset('public/assets/app/js/myscript.js')}}"></script>
+    <script src="{{ asset('public/assets/app/js/ngscript.js')}}"></script>
+    <script src="{{ asset('public/assets/app/js/ng_code.js')}}"></script>
+
+
     <script type="text/javascript">
         if (window.location.hash && window.location.hash == '#_=_') {
             if (window.history && history.pushState) {
